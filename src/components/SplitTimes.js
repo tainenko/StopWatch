@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const SplitTimes = ({value = []}) => {
     return value.map((v, k) => (
-        <MajorClock key={k} milliseconds={v}/>
+        <MajorClock className="clock" key={k} milliseconds={v}/>
     ))
 };
 
