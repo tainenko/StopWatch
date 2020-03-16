@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "../css/ControlButton.css"
+
 
 const ControlButton = (props) => {
     const {activated, onStart, onPause, onReset, onSplit} = props;
@@ -22,7 +22,7 @@ const ControlButton = (props) => {
 
 };
 ControlButton.propTypes = {
-    activated: PropTypes.bool,
+    activated: PropTypes.bool.isRequired,
     onStart: PropTypes.func.isRequired,
     onPause: PropTypes.func.isRequired,
     onReset: PropTypes.func.isRequired,
